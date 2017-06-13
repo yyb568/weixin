@@ -20,7 +20,7 @@ class MY_Controller extends CI_Controller{
 	 * add by yyb5683@gmail.com
 	 * 2015年12月10日11:34:15
 	 */
-	public function __construct(){
+	public function __construct(){echo '1';die;
 		parent::__construct();
 	}
 	
