@@ -34,6 +34,58 @@ class MY_Controller extends CI_Controller{
 		return 'https://api.weixin.qq.com/cgi-bin/ticket/getticket?' . http_build_query($params);
 	}
 	
+	/**
+	 * @desc 获取微信js所需签名
+	 * @version 2017年6月13日22:42:57
+	 */
+	public function getWxJsConfig($url) {
+		$this->load->library("memcache");
+		$ticket = $this->memcache->get('weixin_ticket');
+		if(empty($ticket)) {
+			//获取授权token
+			$token = $this->memcache->get('weixin_token');
+			if(empty($token)) {
+				$accessTokenUrl = $this->getTokenUrl();
+				$tokenInfo = $this->curl($accessTokenUrl);
+				if(false == empty($tokenInfo['access_token'])) {
+					$this->memcache->set('weixin_token', $tokenInfo['access_token'], $tokenInfo['expires_in']-60);
+					$token = $tokenInfo['access_token'];
+				}
+			}
+	
+			//获取ticket
+			$ticketUrl = $this->getTicketUrl($token);
+			$ticketInfo = $this->curl($ticketUrl);
+			if(false == empty($ticketInfo['ticket'])) {
+				$this->memcache->set('weixin_ticket', $ticketInfo['ticket'], $ticketInfo['expires_in']-60);
+				$ticket = $ticketInfo['ticket'];
+			}
+		}
+	
+		$time = time();
+		$noncestr = $this->createNonceStr();
+		$string = "jsapi_ticket=$ticket&noncestr={$noncestr}&timestamp=$time&url=$url";
+		$signature = sha1($string);
+		return array(
+				'appId' => $this->APPID,
+				'timestamp' => $time,
+				'nonceStr' => $noncestr,
+				'signature' => $signature,
+		);
+	}
+	
+	/**
+	 * @desc 获取公众号的全局唯一票据access token
+	 * @version 2015-01-28 10:45:00
+	 */
+	public function getTokenUrl() {
+		$params = array(
+				'grant_type' => 'client_credential',
+				'appid' => $this->APPID, //公众号的唯一标识
+				'secret' => $this->APPSECRET, //公众号的appsecret
+		);
+		return 'https://api.weixin.qq.com/cgi-bin/token?' . http_build_query($params);
+	}
 	
 	/**
 	 * 错误信息输出格式
