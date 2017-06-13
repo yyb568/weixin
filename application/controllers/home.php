@@ -15,10 +15,9 @@ class Home extends MY_Controller{
 		parent::__construct();
 		$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 		$wx_url = "$protocol$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-		$wxConfig = $this->getWxJsConfig($wx_url);
+// 		$wxConfig = $this->getWxJsConfig($wx_url);
 		print_r($protocol);
-		print_r($wx_url);
-		print_r($wxConfig);die;
+		print_r($wx_url);die;
 		
 	}
 	
