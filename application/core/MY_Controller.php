@@ -10,19 +10,30 @@ if (ENVIRONMENT != 'product'){
 }
 class MY_Controller extends CI_Controller{
 	
-	/**
-	 * 常量变量定义
-	 */
-	public $template = array();			//模板数据
-	
+	private $token;
+	private $encodingAesKey;
+	private $appId;
 	/**
 	 * 初始化操作
 	 * add by yyb5683@gmail.com
 	 * 2015年12月10日11:34:15
 	 */
-	public function __construct(){echo '1';die;
+	public function __construct(){
 		parent::__construct();
 	}
+	
+	/**
+	 * @desc 获取jsapi_ticket
+	 * @version 2015-01-28 10:54:00
+	 */
+	public static function getTicketUrl($token) {
+		$params = array(
+				'access_token' => $token,
+				'type' => 'jsapi',
+		);
+		return 'https://api.weixin.qq.com/cgi-bin/ticket/getticket?' . http_build_query($params);
+	}
+	
 	
 	/**
 	 * 错误信息输出格式
