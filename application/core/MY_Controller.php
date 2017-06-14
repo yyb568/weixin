@@ -60,11 +60,17 @@ class MY_Controller extends CI_Controller{
 	 * @version 2017年6月13日22:42:57
 	 */
 	public function getWxJsConfig() {
-		$accessTokenUrl = $this->getTokenUrl();
-		$tokenInfo = $this->curl($accessTokenUrl);
-		$dd = $this->getAccmenu($tokenInfo);
-		$ss = $this->curl($dd);
-		print_r($ss);die;
+		$this->load->library("memcache");
+		//获取授权token
+		$token = $this->memcache->get('weixin_token');
+		if (empty($token)){
+			$accessTokenUrl = $this->getTokenUrl();
+			$tokenInfo = $this->curl($accessTokenUrl);
+			if(false == empty($tokenInfo['access_token'])) {
+				$this->memcache->set('weixin_token', $tokenInfo['access_token'], $tokenInfo['expires_in']-60);
+				$token = $tokenInfo['access_token'];
+			}
+		}
 	}
 	
 	/**
@@ -87,6 +93,20 @@ class MY_Controller extends CI_Controller{
 		return json_decode($output,true);
 			
 			
+	}
+	
+	/**
+	 * 生成随机数
+	 * @param number $length
+	 * @return string
+	 */
+	public function createNonceStr($length = 16) {
+		$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+		$str = "";
+		for ($i = 0; $i < $length; $i++) {
+			$str .= substr($chars, mt_rand(0, strlen($chars) - 1), 1);
+		}
+		return $str;
 	}
 	
 	/**
