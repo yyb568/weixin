@@ -53,6 +53,8 @@ class MY_Controller extends CI_Controller{
 	 */
 	public function getWxJsConfig() {
 		$accessTokenUrl = $this->getTokenUrl();
+		
+		print_r($accessTokenUrl);die;
 	}
 	
 	/**
