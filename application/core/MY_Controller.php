@@ -63,6 +63,7 @@ class MY_Controller extends CI_Controller{
 		$this->load->library("memcache");
 		//获取授权token
 		$token = $this->memcache->get('weixin_token');
+		print_r($token);die;
 		if (empty($token)){
 			$accessTokenUrl = $this->getTokenUrl();
 			$tokenInfo = $this->curl($accessTokenUrl);
