@@ -36,6 +36,14 @@ class MY_Controller extends CI_Controller{
 	}
 	
 	/**
+	 * @desc 获取公众号的菜单
+	 * @version 2017年6月14日09:44:02
+	 */
+	public function getAccmenu($tokenInfo = ''){
+		return 'https://api.weixin.qq.com/cgi-bin/menu/create?access_token='.$tokenInfo;
+	}
+	
+	/**
 	 * @desc 获取jsapi_ticket
 	 * @version 2015-01-28 10:54:00
 	 */
@@ -54,7 +62,8 @@ class MY_Controller extends CI_Controller{
 	public function getWxJsConfig() {
 		$accessTokenUrl = $this->getTokenUrl();
 		$tokenInfo = $this->curl($accessTokenUrl);
-		print_r($tokenInfo);die;
+		$dd = $this->getAccmenu($tokenInfo);
+		print_r($dd);die;
 	}
 	
 	/**
