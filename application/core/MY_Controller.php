@@ -40,7 +40,7 @@ class MY_Controller extends CI_Controller{
 	 * @version 2017年6月14日09:44:02
 	 */
 	public function getAccmenu($tokenInfo = ''){
-		return 'https://api.weixin.qq.com/cgi-bin/menu/create?access_token='.$tokenInfo;
+		return 'https://api.weixin.qq.com/cgi-bin/menu/create?access_token='.$tokenInfo['access_token'];
 	}
 	
 	/**
@@ -63,7 +63,8 @@ class MY_Controller extends CI_Controller{
 		$accessTokenUrl = $this->getTokenUrl();
 		$tokenInfo = $this->curl($accessTokenUrl);
 		$dd = $this->getAccmenu($tokenInfo);
-		print_r($dd);die;
+		$ss = $this->curl($dd);
+		print_r($ss);die;
 	}
 	
 	/**
