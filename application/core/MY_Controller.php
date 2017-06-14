@@ -53,8 +53,30 @@ class MY_Controller extends CI_Controller{
 	 */
 	public function getWxJsConfig() {
 		$accessTokenUrl = $this->getTokenUrl();
-		
-		print_r($accessTokenUrl);die;
+		$tokenInfo = $this->curl($accessTokenUrl);
+		print_r($tokenInfo);die;
+	}
+	
+	/**
+	 * @desc get请求
+	 * @version 2017年6月13日22:42:57
+	 */
+	function curl($url){
+		//$json =  file_get_contents($url);
+		//return json_decode($json,true);
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_HEADER, 0);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+		curl_setopt($ch, CURLOPT_SSLVERSION, 1);
+			
+		$output = curl_exec($ch);
+		curl_close($ch);
+		return json_decode($output,true);
+			
+			
 	}
 	
 	/**
