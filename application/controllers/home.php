@@ -11,7 +11,7 @@ class Home extends MY_Controller{
 	 * add by yyb5683@gmail.com
 	 * 2017年6月12日16:32:00
 	 */
-	public function __construct(){print_r($_GET);die;
+	public function __construct(){
 		parent::__construct();
 	}
 	
