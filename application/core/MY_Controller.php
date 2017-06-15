@@ -119,34 +119,54 @@ class MY_Controller extends CI_Controller{
 	public function get_Custommenu($token = ''){
 		$access_token = $token;
 		$jsonmenu = '{
-     "button":[
-     {	
-          "type":"click",
-          "name":"今日歌曲",
-          "key":"V1001_TODAY_MUSIC"
-      },
-      {
-           "name":"菜单",
-           "sub_button":[
-           {	
-               "type":"view",
-               "name":"搜索",
-               "url":"http://www.soso.com/"
-            },
-            {
-                 "type":"miniprogram",
-                 "name":"wxa",
-                 "url":"http://mp.weixin.qq.com",
-                 "appid":"wx286b93c14bbf93aa",
-                 "pagepath":"pages/lunar/index"
-             },
-            {
-               "type":"click",
-               "name":"赞一下我们",
-               "key":"V1001_GOOD"
-            }]
-       }]
- }';
+    		 "button": [
+        {
+            "name": "链接", 
+            "sub_button": [
+                {
+                    "type": "view", 
+                    "name": "搜索", 
+                    "url": "http://www.baidu.com/"
+                }, 
+                {
+                    "type": "view", 
+                    "name": "视频", 
+                    "url": "http://v.qq.com/"
+                }, 
+                {
+                    "type": "click", 
+                    "name": "赞一下我们", 
+                    "key": "BTN_GOOD"
+                }
+            ]
+        }, 
+        {
+            "name": "查询天气", 
+            "sub_button": [
+                {
+                    "type": "click", 
+                    "name": "武汉", 
+                    "key": "BTN_TQ_WUHAN"
+                }, 
+                {
+                    "type": "click", 
+                    "name": "上海", 
+                    "key": "BTN_TQ_SHANGHAI"
+                }, 
+                {
+                    "type": "click", 
+                    "name": "北京", 
+                    "key": "BTN_TQ_BEIJING"
+                }
+            ]
+        }, 
+        {
+            "type": "click", 
+            "name": "帮助", 
+            "key": "BTN_HELP"
+        }
+    ]
+ 		}';
 		$url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$access_token;
 		$result = $this->https_request($url, $jsonmenu);
 		var_dump($result);
