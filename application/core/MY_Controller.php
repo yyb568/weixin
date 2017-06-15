@@ -119,60 +119,34 @@ class MY_Controller extends CI_Controller{
 	public function get_Custommenu($token = ''){
 		$access_token = $token;
 		$jsonmenu = '{
-      "button":[
+     "button":[
+     {	
+          "type":"click",
+          "name":"今日歌曲",
+          "key":"V1001_TODAY_MUSIC"
+      },
       {
-            "name":"天气预报",
+           "name":"菜单",
            "sub_button":[
+           {	
+               "type":"view",
+               "name":"搜索",
+               "url":"http://www.soso.com/"
+            },
+            {
+                 "type":"miniprogram",
+                 "name":"wxa",
+                 "url":"http://mp.weixin.qq.com",
+                 "appid":"wx286b93c14bbf93aa",
+                 "pagepath":"pages/lunar/index"
+             },
             {
                "type":"click",
-               "name":"北京天气",
-               "key":"天气北京"
-            },
-            {
-              "type":"click",
-               "name":"上海天气",
-               "key":"天气上海"
-            },
-            {
-               "type":"click",
-               "name":"广州天气",
-               "key":"天气广州"
-            },
-            {
-            "type":"click",
-              "name":"深圳天气",
-               "key":"天气深圳"
-            },
-            {
-                "type":"view",
-                "name":"本地天气",
-                "url":"http://m.hao123.com/a/tianqi"
+               "name":"赞一下我们",
+               "key":"V1001_GOOD"
             }]
-
-
-       },
-       {
-           "name":"瑞雪",
-           "sub_button":[
-            {
-               "type":"click",
-               "name":"公司简介",
-               "key":"company"
-            },
-            {
-               "type":"click",
-               "name":"趣味游戏",
-              "key":"游戏"
-           },
-            {
-                "type":"click",
-                "name":"讲个笑话",
-                "key":"笑话"
-            }]
-
-
        }]
-}';
+ }';
 		$url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$access_token;
 		$result = $this->https_request($url, $jsonmenu);
 		var_dump($result);
