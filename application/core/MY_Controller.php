@@ -121,7 +121,12 @@ class MY_Controller extends CI_Controller{
 		$jsonmenu = '{
     		 "button": [
         {
-            "name": "链接", 
+			"type": "click", 
+            "name": "我的商城", 
+			"url": "http://leapp.u-ego.com/channel/index"
+        }, 
+        {
+            "name": "查询天气", 
             "sub_button": [
                 {
                     "type": "view", 
@@ -137,26 +142,6 @@ class MY_Controller extends CI_Controller{
                     "type": "click", 
                     "name": "赞一下我们", 
                     "key": "BTN_GOOD"
-                }
-            ]
-        }, 
-        {
-            "name": "查询天气", 
-            "sub_button": [
-                {
-                    "type": "click", 
-                    "name": "武汉", 
-                    "key": "BTN_TQ_WUHAN"
-                }, 
-                {
-                    "type": "click", 
-                    "name": "上海", 
-                    "key": "BTN_TQ_SHANGHAI"
-                }, 
-                {
-                    "type": "click", 
-                    "name": "北京", 
-                    "key": "BTN_TQ_BEIJING"
                 }
             ]
         }, 
