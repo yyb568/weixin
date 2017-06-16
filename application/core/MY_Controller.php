@@ -126,7 +126,7 @@ class MY_Controller extends CI_Controller{
                 {
                     "type": "view", 
                     "name": "搜索", 
-                    "url": "http://www.baidu.com/"
+                    "url": "http://leapp.u-ego.com/channel/index"
                 }, 
                 {
                     "type": "view", 
