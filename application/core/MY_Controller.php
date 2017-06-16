@@ -62,16 +62,16 @@ class MY_Controller extends CI_Controller{
 	public function getWxJsConfig() {
 		$this->load->library("memcache");
 		//获取授权token
-// 		$token = $this->memcache->get('weixin_token');
-// 		if (empty($token)){
+		$token = $this->memcache->get('weixin_token');
+		if (empty($token)){
 			$accessTokenUrl = $this->getTokenUrl();
 			$tokenInfo = $this->curl($accessTokenUrl);
 			$token = $tokenInfo['access_token'];
-// 			if(false == empty($tokenInfo['access_token'])) {
-// 				$this->memcache->set('weixin_token', $tokenInfo['access_token'], $tokenInfo['expires_in']-60);
-// 				$token = $tokenInfo['access_token'];
-// 			}
-// 		}
+			if(false == empty($tokenInfo['access_token'])) {
+				$this->memcache->set('weixin_token', $tokenInfo['access_token'], $tokenInfo['expires_in']-60);
+				$token = $tokenInfo['access_token'];
+			}
+		}
 		//自定义菜单
 		$this->get_Custommenu($token);
 	}
