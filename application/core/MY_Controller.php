@@ -10,8 +10,8 @@ if (ENVIRONMENT != 'product'){
 }
 class MY_Controller extends CI_Controller{
 	
-	protected $APPID = 'wx12c277b75b22bfc9';
-	protected $APPSECRET = '9912f9e123359337fe377e5ffe3ca9a2';
+	protected $APPID = 'wx2c466f872e9e809b';
+	protected $APPSECRET = '53263d460903e8cbc6fcb7c3d5f75022';
 	
 	/**
 	 * 初始化操作
@@ -63,14 +63,14 @@ class MY_Controller extends CI_Controller{
 		$this->load->library("memcache");
 		//获取授权token
 // 		$token = $this->memcache->get('weixin_token');
-		if (empty($token)){
+// 		if (empty($token)){
 			$accessTokenUrl = $this->getTokenUrl();
 			$tokenInfo = $this->curl($accessTokenUrl);
 			if(false == empty($tokenInfo['access_token'])) {
 				$this->memcache->set('weixin_token', $tokenInfo['access_token'], $tokenInfo['expires_in']-60);
 				$token = $tokenInfo['access_token'];
 			}
-		}
+// 		}
 		//自定义菜单
 		$this->get_Custommenu($token);
 	}
