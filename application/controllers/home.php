@@ -5,7 +5,7 @@
  * add by yyb5683@gmail.com
  * 2017年6月12日16:31:04
  */
-define('TOKEN','yinyibin');
+define('TOKEN','weixin');
 class Home extends MY_Controller{
 	/**
 	 * 初始化
