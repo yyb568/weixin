@@ -66,10 +66,11 @@ class MY_Controller extends CI_Controller{
 // 		if (empty($token)){
 			$accessTokenUrl = $this->getTokenUrl();
 			$tokenInfo = $this->curl($accessTokenUrl);
-			if(false == empty($tokenInfo['access_token'])) {
-				$this->memcache->set('weixin_token', $tokenInfo['access_token'], $tokenInfo['expires_in']-60);
-				$token = $tokenInfo['access_token'];
-			}
+			$token = $tokenInfo['access_token'];
+// 			if(false == empty($tokenInfo['access_token'])) {
+// 				$this->memcache->set('weixin_token', $tokenInfo['access_token'], $tokenInfo['expires_in']-60);
+// 				$token = $tokenInfo['access_token'];
+// 			}
 // 		}
 		//自定义菜单
 		$this->get_Custommenu($token);
