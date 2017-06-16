@@ -62,7 +62,7 @@ class MY_Controller extends CI_Controller{
 	public function getWxJsConfig() {
 		$this->load->library("memcache");
 		//获取授权token
-		$token = $this->memcache->get('weixin_token');
+// 		$token = $this->memcache->get('weixin_token');
 		if (empty($token)){
 			$accessTokenUrl = $this->getTokenUrl();
 			$tokenInfo = $this->curl($accessTokenUrl);
