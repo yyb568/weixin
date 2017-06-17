@@ -10,8 +10,8 @@ if (ENVIRONMENT != 'product'){
 }
 class MY_Controller extends CI_Controller{
 	
-	protected $APPID = 'wx72ab0ee54f85fadb';
-	protected $APPSECRET = '3a7c4248371224cd74a397455a3162d4';
+	protected $APPID = 'wx2c466f872e9e809b';
+	protected $APPSECRET = '53263d460903e8cbc6fcb7c3d5f75022';
 	
 	/**
 	 * 初始化操作
