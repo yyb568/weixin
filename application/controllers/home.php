@@ -5,7 +5,7 @@
  * add by yyb5683@gmail.com
  * 2017年6月12日16:31:04
  */
-define('TOKEN','weixin');
+define('TOKEN','yinyibin');
 class Home extends MY_Controller{
 	/**
 	 * 初始化
@@ -14,7 +14,7 @@ class Home extends MY_Controller{
 	 */
 	public function __construct(){
 		parent::__construct();
-		$wxConfig = $this->getWxJsConfig();
+// 		$wxConfig = $this->getWxJsConfig();
 		
 	}
 	
@@ -24,7 +24,7 @@ class Home extends MY_Controller{
 	 * 2017年6月12日16:32:21
 	 */
 	public function index(){
-// 		$this->valid();
+		$this->valid();
 // 		$this->load->view("main/index",$this->template);
 	}
 	
