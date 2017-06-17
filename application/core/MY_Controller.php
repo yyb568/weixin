@@ -63,8 +63,8 @@ class MY_Controller extends CI_Controller{
 		//加载memcache
 		$this->load->library("memcache");
 		//从memcache获取授权token
-		$token = $this->memcache->get('weixin_token');
-		if (empty($token)){
+// 		$token = $this->memcache->get('weixin_token');
+// 		if (empty($token)){
 			$accessTokenUrl = $this->getTokenUrl();
 			$tokenInfo = $this->curl($accessTokenUrl);
 			$token = $tokenInfo['access_token'];
@@ -73,7 +73,7 @@ class MY_Controller extends CI_Controller{
 				$this->memcache->set('weixin_token', $tokenInfo['access_token'], $tokenInfo['expires_in']-60);
 				$token = $tokenInfo['access_token'];
 			}
-		}
+// 		}
 		//自定义菜单
 		$this->get_Custommenu($token);
 	}
