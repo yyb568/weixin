@@ -60,18 +60,20 @@ class MY_Controller extends CI_Controller{
 	 * @version 2017年6月13日22:42:57
 	 */
 	public function getWxJsConfig() {
+		//加载memcache
 		$this->load->library("memcache");
-		//获取授权token
-		$token = $this->memcache->get('weixin_token');
-		if (empty($token)){
+		//从memcache获取授权token
+// 		$token = $this->memcache->get('weixin_token');
+// 		if (empty($token)){
 			$accessTokenUrl = $this->getTokenUrl();
 			$tokenInfo = $this->curl($accessTokenUrl);
 			$token = $tokenInfo['access_token'];
 			if(false == empty($tokenInfo['access_token'])) {
+				//将token存入memcache
 				$this->memcache->set('weixin_token', $tokenInfo['access_token'], $tokenInfo['expires_in']-60);
 				$token = $tokenInfo['access_token'];
 			}
-		}
+// 		}
 		//自定义菜单
 		$this->get_Custommenu($token);
 	}
@@ -122,48 +124,28 @@ class MY_Controller extends CI_Controller{
 		$jsonmenu = '{
     		 "button": [
         {
-            "name": "链接", 
-            "sub_button": [
-                {
-                    "type": "view", 
-                    "name": "我的商城", 
-                    "url": "http://leapp.u-ego.com/channel/index"
-                }, 
-                {
-                    "type": "view", 
-                    "name": "视频", 
-                    "url": "http://v.qq.com/"
-                }, 
-                {
-                    "type": "click", 
-                    "name": "赞一下我们", 
-                    "key": "BTN_GOOD"
-                }
-            ]
+			"type": "view",
+            "name": "我的商城",
+			"url":"http://leapp.u-ego.com/channel/index"
         }, 
         {
             "name": "查询天气", 
             "sub_button": [
                 {
-                    "type": "click", 
-                    "name": "武汉", 
+                    "type": "view", 
+                    "name": "小视频", 
                     "key": "BTN_TQ_WUHAN"
                 }, 
                 {
-                    "type": "click", 
+                    "type": "小段子", 
                     "name": "上海", 
                     "key": "BTN_TQ_SHANGHAI"
-                }, 
-                {
-                    "type": "click", 
-                    "name": "北京", 
-                    "key": "BTN_TQ_BEIJING"
                 }
             ]
         }, 
         {
-            "type": "click", 
-            "name": "帮助", 
+            "type": "view", 
+            "name": "我的博客", 
             "key": "BTN_HELP"
         }
     ]
