@@ -122,33 +122,33 @@ class MY_Controller extends CI_Controller{
 	public function get_Custommenu($token = ''){
 		$access_token = $token;
 		$jsonmenu = '{
-    		 "button": [
-        {
-			"type": "view",
-            "name": "我的商城",
-			"url":"http://leapp.u-ego.com/channel/index"
-        }, 
-        {
-            "name": "查询天气", 
-            "sub_button": [
-                {
-                    "type": "view", 
-                    "name": "小视频", 
-                    "key": "BTN_TQ_WUHAN"
-                }, 
-                {
-                    "type": "view", 
-                    "name": "小段子", 
-                    "key": "BTN_TQ_SHANGHAI"
-                }
-            ]
-        }, 
-        {
-            "type": "click", 
-            "name": "我的博客", 
-            "key": "BTN_HELP"
-        }
-    ]
+    		 "button":[
+     {	
+          "type":"click",
+          "name":"今日歌曲",
+          "key":"V1001_TODAY_MUSIC"
+      },
+      {
+           "name":"菜单",
+           "sub_button":[
+           {	
+               "type":"view",
+               "name":"搜索",
+               "url":"http://www.soso.com/"
+            },
+            {
+                 "type":"miniprogram",
+                 "name":"wxa",
+                 "url":"http://mp.weixin.qq.com",
+                 "appid":"wx286b93c14bbf93aa",
+                 "pagepath":"pages/lunar/index"
+             },
+            {
+               "type":"click",
+               "name":"赞一下我们",
+               "key":"V1001_GOOD"
+            }]
+       }]
  		}';
 		$url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$access_token;
 		$result = $this->https_request($url, $jsonmenu);
