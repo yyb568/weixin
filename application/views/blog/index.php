@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-
-<!-- Mirrored from www.zi-han.net/theme/hplus/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:17:47 GMT -->
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人资料</title>
@@ -194,8 +190,5 @@
     <script src="<?=static_url("js")?>content.min.js?v=1.0.0"></script>
     <script src="<?=static_url("js")?>plugins/peity/jquery.peity.min.js"></script>
     <script src="<?=static_url("js")?>demo/peity-demo.min.js"></script>
-    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
-
 </body>
-<!-- Mirrored from www.zi-han.net/theme/hplus/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:18:21 GMT -->
 </html>
