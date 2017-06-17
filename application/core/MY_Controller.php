@@ -67,7 +67,6 @@ class MY_Controller extends CI_Controller{
 		if (empty($token)){
 			$accessTokenUrl = $this->getTokenUrl();
 			$tokenInfo = $this->curl($accessTokenUrl);
-			$token = $tokenInfo['access_token'];
 			if(false == empty($tokenInfo['access_token'])) {
 				//将token存入memcache
 				$this->memcache->set('weixin_token', $tokenInfo['access_token'], $tokenInfo['expires_in']-60);
