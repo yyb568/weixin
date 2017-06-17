@@ -122,54 +122,34 @@ class MY_Controller extends CI_Controller{
 	public function get_Custommenu($token = ''){
 		$access_token = $token;
 		$jsonmenu = '{
-    		"button": [
+    "button": [
         {
-            "name": "链接", 
-            "sub_button": [
-                {
-                    "type": "view", 
-                    "name": "搜索", 
-                    "url": "http://www.baidu.com/"
-                }, 
-                {
-                    "type": "view", 
-                    "name": "视频", 
-                    "url": "http://v.qq.com/"
-                }, 
-                {
-                    "type": "click", 
-                    "name": "赞一下我们", 
-                    "key": "BTN_GOOD"
-                }
-            ]
+            "type": "view", 
+            "name": "我的商城", 
+            "url": "http://leapp.u-ego.com/channel/index"
         }, 
         {
-            "name": "查询天气", 
+            "name": "娱乐专享", 
             "sub_button": [
                 {
-                    "type": "click", 
-                    "name": "武汉", 
-                    "key": "BTN_TQ_WUHAN"
+                    "type": "view", 
+                    "name": "小视频", 
+                    "url": "http://www.iqiyi.com/"
                 }, 
                 {
-                    "type": "click", 
-                    "name": "上海", 
-                    "key": "BTN_TQ_SHANGHAI"
-                }, 
-                {
-                    "type": "click", 
-                    "name": "北京", 
-                    "key": "BTN_TQ_BEIJING"
+                    "type": "view", 
+                    "name": "小段子", 
+                    "url": "https://www.qiushibaike.com/"
                 }
             ]
         }, 
         {
             "type": "view", 
-            "name": "我的博客", 
-            "url": "http://v.qq.com/"
+            "name": "帮助", 
+            "url": "http://www.baidu.com"
         }
     ]
- 		}';
+}';
 		$url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$access_token;
 		$result = $this->https_request($url, $jsonmenu);
 		var_dump($result);
