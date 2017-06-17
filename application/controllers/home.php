@@ -1,7 +1,7 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
- * 后台管理首页
+ * 首页
  * add by yyb5683@gmail.com
  * 2017年6月12日16:31:04
  */
@@ -24,6 +24,7 @@ class Home extends MY_Controller{
 	 * 2017年6月12日16:32:21
 	 */
 	public function index(){
+		//初次接入验证
 // 		$this->valid();
 // 		$this->load->view("main/index",$this->template);
 	}
