@@ -137,14 +137,14 @@ class MY_Controller extends CI_Controller{
                     "key": "BTN_TQ_WUHAN"
                 }, 
                 {
-                    "type": "小段子", 
-                    "name": "上海", 
+                    "type": "view", 
+                    "name": "小段子", 
                     "key": "BTN_TQ_SHANGHAI"
                 }
             ]
         }, 
         {
-            "type": "view", 
+            "type": "click", 
             "name": "我的博客", 
             "key": "BTN_HELP"
         }
