@@ -164,9 +164,9 @@ class MY_Controller extends CI_Controller{
             ]
         }, 
         {
-            "type": "click", 
-            "name": "帮助", 
-            "key": "BTN_HELP"
+            "type": "view", 
+            "name": "我的博客", 
+            "url": "http://v.qq.com/"
         }
     ]
  		}';
