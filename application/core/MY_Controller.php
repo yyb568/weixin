@@ -144,7 +144,7 @@ class MY_Controller extends CI_Controller{
         }, 
         {
             "type": "view", 
-            "name": "帮助", 
+            "name": "我的博客", 
             "url": "http://www.baidu.com"
         }
     ]
