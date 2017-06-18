@@ -8,7 +8,6 @@
     <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
 
     <link rel="shortcut icon" href="favicon.ico"> <link href="<?=static_url("css")?>bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
-    <link href="<?=static_url("css")?>font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
     <link href="<?=static_url("css")?>animate.min.css" rel="stylesheet">
     <link href="<?=static_url("css")?>style.min862f.css?v=4.1.0" rel="stylesheet">
 <style>
@@ -184,23 +183,15 @@
                                     <i class="fa fa-eye"> </i> 46 浏览
                                 </div>
                             </div>
-                        </div>
+                       </div>
                     </div>
                 </div>
+             </div>
+          </div>
         </div>
-        </div>
-    </div>
-              
-              
-              
-              
-              
-              
-                </div>
-            </div>
-        </div>
+     </div>
+</div>
     <script src="<?=static_url("js")?>jquery.min.js?v=2.1.4"></script>
-    <script src="<?=static_url("js")?>bootstrap.min.js?v=3.3.6"></script>
     <script src="<?=static_url("js")?>plugins/peity/jquery.peity.min.js"></script>
     <script src="<?=static_url("js")?>demo/peity-demo.min.js"></script>
 </body>
