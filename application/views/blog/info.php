@@ -26,16 +26,16 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
                 <div class="ibox">
-                    <div class="ibox-content"style="padding:25px">
+                    <div class="ibox-content"style="padding:20px">
                         <div class="pull-right">
                             <button class="btn btn-white btn-xs" type="button">700BIKE</button>
                             <button class="btn btn-white btn-xs" type="button">BeginOne</button>
                             <button class="btn btn-white btn-xs" type="button">乐视超级自行车</button>
                         </div>
                         <div class="text-center article-title">
-                            <h1>
+                            <h2>
                                     自行车都智能化了，你可知道它的历史？
-                                </h1>
+                                </h2>
                         </div>
                         <p>
                             在不少旁观者的眼里，智能化几乎成了一种避之唯恐不及的“瘟疫”，开始攀附上大大小小、各式各样的工具和设备，从水杯、灯泡、体重秤这样的小物件，再到冰箱、洗衣机这些生活中的庞然大物。
