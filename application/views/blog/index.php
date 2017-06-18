@@ -93,7 +93,7 @@
          <?php foreach ((array)$List as $key => $val){?>
                 <div class="ibox">
                     <div class="ibox-content">
-                        <a href="article.html" class="btn-link">
+                        <a href="<?=site_url("blog/blog/info/{$val['id']}") ?>" class="btn-link">
                             <h2><?=$val['titles'] ?></h2>
                         </a>
                         <div class="small m-b-xs">

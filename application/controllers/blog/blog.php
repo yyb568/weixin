@@ -43,4 +43,20 @@ class Blog extends MY_Controller{
 		$this->template['userlist'] = $userlist;
 		$this->load->view("blog/index",$this->template);
 	}
+	
+	/**
+	 * 首页
+	 * add by yyb5683@gmail.com
+	 * 2017年6月17日16:46:58
+	 */
+	public function info($id = 0){
+		$params = array (
+				'table' => 'blog',
+				'select' => 'id,content,created',
+				'limit' => 1
+		);
+	 	$info = $this->common_model->get_list($params);
+	 	$this->tempalte['info'] = $info;
+	 	$this->load->view("blog/info",$this->template);
+	}
 } 
