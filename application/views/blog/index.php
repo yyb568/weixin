@@ -87,103 +87,116 @@
                             </a>
                         </div>
                     </div>
+        <div class="animated fadeInRight blog">
+        <div class="row">
+         <div class="col-lg-12">
+                <div class="ibox">
                     <div class="ibox-content">
-
-                        <div>
-                            <div class="feed-activity-list">
-
-                                <div class="feed-element">
-                                    <a href="profile.html#" class="pull-left">
-                                        <img alt="image" class="img-circle" src="img/a1.jpg">
-                                    </a>
-                                    <div class="media-body ">
-                                        <small class="pull-right text-navy">1天前</small>
-                                        <strong>奔波儿灞</strong> 关注了 <strong>灞波儿奔</strong>.
-                                        <br>
-                                        <small class="text-muted">54分钟前 来自 皮皮时光机</small>
-                                        <div class="actions">
-                                            <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> 赞 </a>
-                                            <a class="btn btn-xs btn-danger"><i class="fa fa-heart"></i> 收藏</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="feed-element">
-                                    <a href="profile.html#" class="pull-left">
-                                        <img alt="image" class="img-circle" src="img/profile.jpg">
-                                    </a>
-                                    <div class="media-body ">
-                                        <small class="pull-right">5分钟前</small>
-                                        <strong>作家崔成浩</strong> 发布了一篇文章
-                                        <br>
-                                        <small class="text-muted">今天 10:20 来自 iPhone 6 Plus</small>
-
-                                    </div>
-                                </div>
-
-                                <div class="feed-element">
-                                    <a href="profile.html#" class="pull-left">
-                                        <img alt="image" class="img-circle" src="img/a2.jpg">
-                                    </a>
-                                    <div class="media-body ">
-                                        <small class="pull-right">2小时前</small>
-                                        <strong>作家崔成浩</strong> 抽奖中了20万
-                                        <br>
-                                        <small class="text-muted">今天 09:27 来自 Koryolink iPhone</small>
-                                        <div class="well">
-                                            抽奖，人民币2000元，从转发这个微博的粉丝中抽取一人。11月16日平台开奖。随手一转，万一中了呢？
-                                        </div>
-                                        <div class="pull-right">
-                                            <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> 赞 </a>
-                                            <a class="btn btn-xs btn-white"><i class="fa fa-heart"></i> 收藏</a>
-                                            <a class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> 评论</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="feed-element">
-                                    <a href="profile.html#" class="pull-left">
-                                        <img alt="image" class="img-circle" src="img/a3.jpg">
-                                    </a>
-                                    <div class="media-body ">
-                                        <small class="pull-right">2天前</small>
-                                        <strong>天猫</strong> 上传了2张图片
-                                        <br>
-                                        <small class="text-muted">11月7日 11:56 来自 微博 weibo.com</small>
-                                        <div class="photos">
-                                            <a target="_blank" href="../../../24.media.tumblr.com/20a9c501846f50c1271210639987000f/tumblr_n4vje69pJm1st5lhmo1_1280.jpg">
-                                                <img alt="image" class="feed-photo" src="img/p1.jpg">
-                                            </a>
-                                            <a target="_blank" href="../../../37.media.tumblr.com/9afe602b3e624aff6681b0b51f5a062b/tumblr_n4ef69szs71st5lhmo1_1280.jpg">
-                                                <img alt="image" class="feed-photo" src="img/p3.jpg">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="feed-element">
-                                    <a href="profile.html#" class="pull-left">
-                                        <img alt="image" class="img-circle" src="img/a4.jpg">
-                                    </a>
-                                    <div class="media-body ">
-                                        <small class="pull-right text-navy">5小时前</small>
-                                        <strong>在水一方Y</strong> 关注了 <strong>那二十年的单身</strong>.
-                                        <br>
-                                        <small class="text-muted">今天 10:39 来自 iPhone客户端</small>
-                                        <div class="actions">
-                                            <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> 赞 </a>
-                                            <a class="btn btn-xs btn-white"><i class="fa fa-heart"></i> 收藏</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <button class="btn btn-primary btn-block m" style="margin-left:5px"><i class="fa fa-arrow-down"></i> 显示更多</button>
-
+                        <a href="article.html" class="btn-link">
+                            <h2>
+                                    想知道宁泽涛每天游多少圈？送他 Misfit 最新款 Speedo Shine
+                                </h2>
+                        </a>
+                        <div class="small m-b-xs">
+                            <strong>高 晨</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 3 小时前</span>
                         </div>
-
+                        <p>
+                            就算你敢带着 Apple Watch 下水游泳，它也不能记录你游了多少圈。 夏天刚来时就不停地听到有人提起“有没有在我游泳的时候可以帮忙数圈的设备”，今天 Misfit 终于赶在夏天结束之前推出可追踪游泳运动的新款 Shine。这款新设备是 Misfit 与泳衣品牌 Speedo （速比涛）合作推出，因此被命名为 Speedo Shine。
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>标签：</h5>
+                                <button class="btn btn-primary btn-xs" type="button">Apple Watch</button>
+                                <button class="btn btn-white btn-xs" type="button">速比涛</button>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="small text-right">
+                                    <h5>状态：</h5>
+                                    <div> <i class="fa fa-comments-o"> </i> 56 评论 </div>
+                                    <i class="fa fa-eye"> </i> 144 浏览
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <a href="article.html" class="btn-link">
+                            <h2>
+                                    半数用户弃用 Apple Music？苹果发话了
+                                </h2>
+                        </a>
+                        <div class="small m-b-xs">
+                            <strong>周 欣</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 3 小时前</span>
+                        </div>
+                        <p>
+                            前不久，苹果公司高级副总裁 Eddy Cue 还在宣称 Apple Music 试用期用户超 1100 万，最近就有一份来自 MusicWatch 的调查报告，让人大跌眼镜。
 
+
+                        </p>
+                        <p>
+                            MusicWatch 针对美国 5000 名 13 岁以上人群进行抽样调查，得出数据：约有 77% 的 iOS 用户知道 Apple Music，只有 11% 的用户正在使用它；而在已经注册 Apple Music 三个月免费试用服务的用户中，48% 表示已经弃用，61% 称已关闭 iTunes 中的自动订阅功能。
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>标签：</h5>
+                                <button class="btn btn-primary btn-xs" type="button">调查</button>
+                                <button class="btn btn-white btn-xs" type="button">用户</button>
+                                <button class="btn btn-white btn-xs" type="button">Apple Music</button>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="small text-right">
+                                    <h5>状态：</h5>
+                                    <div> <i class="fa fa-comments-o"> </i> 36 评论 </div>
+                                    <i class="fa fa-eye"> </i> 100 浏览
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <a href="article.html" class="btn-link">
+                            <h2>
+                                    关于新 Apple TV，这里有几点你应该知道的
+                                </h2>
+                        </a>
+                        <div class="small m-b-xs">
+                            <strong>李 谋</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 2 小时前</span>
+                        </div>
+                        <p>
+                            新版的 Apple TV 之前一直有传闻将在 WWDC 上亮相，可是事与愿违。下一代 iPhone 即将于下月与大家见面，新版 Apple TV 将同新 iPhone 一起亮相的传言又是四起。而且现在的传言中还加入了新料。</p>
+                        <p>
+
+                            据 9to5Mac 的消息，Apple TV 不仅要在九月亮相，其诸多细节也一并被曝出。
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>标签：</h5>
+                                <button class="btn btn-white btn-xs" type="button">apple</button>
+                                <button class="btn btn-white btn-xs" type="button">tv</button>
+                                <button class="btn btn-white btn-xs" type="button">苹果</button>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="small text-right">
+                                    <h5>状态：</h5>
+                                    <div> <i class="fa fa-comments-o"> </i> 11 评论 </div>
+                                    <i class="fa fa-eye"> </i> 46 浏览
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+              
+              
+              
+              
+              
+              
+                </div>
             </div>
         </div>
     <script src="<?=static_url("js")?>jquery.min.js?v=2.1.4"></script>
