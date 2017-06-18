@@ -35,7 +35,7 @@
                         <div class="text-center article-title">
                             <h2 style="font-weight:500"><?=$info['titles'] ?></h2>
                         </div>
-                        <?=$info['content']?>
+                        <p style="line-height:28px"><?=$info['content']?></p>
                         <hr>
                         <div class="row">
                             <div class="col-lg-12">
