@@ -103,8 +103,8 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <h5>标签：</h5>
-                                <button class="btn btn-primary btn-xs" type="button">Apple Watch</button>
-                                <button class="btn btn-white btn-xs" type="button">速比涛</button>
+                                <button class="btn btn-primary btn-xs" type="button"><?=$ClassList[$val['classify']]['aname'] ?></button>
+<!--                                 <button class="btn btn-white btn-xs" type="button">速比涛</button> -->
                             </div>
                             <div class="col-md-6">
                                 <div class="small text-right">
