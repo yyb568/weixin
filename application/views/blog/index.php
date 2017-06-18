@@ -26,7 +26,7 @@
                     </div>
                     <div>
                         <div class="ibox-content no-padding border-left-right">
-                            <img alt="image" class="img-responsive" src="<?=static_url("img")?>profile_big.jpg">
+                            <img alt="image" class="img-responsive" src="<?=static_url("img")?>p_big2.jpg">
                         </div>
                         <div class="ibox-content profile-content">
                             <h4><strong>尹义斌</strong></h4>
@@ -131,8 +131,6 @@
                         </div>
                         <p>
                             前不久，苹果公司高级副总裁 Eddy Cue 还在宣称 Apple Music 试用期用户超 1100 万，最近就有一份来自 MusicWatch 的调查报告，让人大跌眼镜。
-
-
                         </p>
                         <p>
                             MusicWatch 针对美国 5000 名 13 岁以上人群进行抽样调查，得出数据：约有 77% 的 iOS 用户知道 Apple Music，只有 11% 的用户正在使用它；而在已经注册 Apple Music 三个月免费试用服务的用户中，48% 表示已经弃用，61% 称已关闭 iTunes 中的自动订阅功能。
@@ -192,9 +190,9 @@
         </div>
      </div>
 </div>
-    <script src="<?=static_url("js")?>jquery.min.js?v=2.1.4"></script>
-    <script src="<?=static_url("js")?>bootstrap.min.js?v=3.3.6"></script>
-    <script src="<?=static_url("js")?>plugins/peity/jquery.peity.min.js"></script>
-    <script src="<?=static_url("js")?>demo/peity-demo.min.js"></script>
+<script src="<?=static_url("js")?>jquery.min.js?v=2.1.4"></script>
+<script src="<?=static_url("js")?>bootstrap.min.js?v=3.3.6"></script>
+<script src="<?=static_url("js")?>plugins/peity/jquery.peity.min.js"></script>
+<script src="<?=static_url("js")?>demo/peity-demo.min.js"></script>
 </body>
 </html>
