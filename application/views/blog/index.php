@@ -97,7 +97,7 @@
                             <h2><?=$val['titles'] ?></h2>
                         </a>
                         <div class="small m-b-xs">
-                            <strong><?=$userlist[$val['user_id']]['uname'] ?></strong>&nbsp;&nbsp;<span class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;<?=date("Y-m-d h:i:s",$val['created']) ?></span>
+                            <strong><?=$userlist[$val['user_id']]['uname'] ?></strong>&nbsp;&nbsp;<span class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;<?=date("Y-m-d",$val['created']) ?></span>
                         </div>
                         <p><?=$val['content']?></p>
                         <div class="row">

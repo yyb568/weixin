@@ -27,6 +27,8 @@ class Blog extends MY_Controller{
 		$params = array (
 				'table' => 'blog',
 				'select' => 'id,titles,classify,content,created,status,user_id',
+				'order' => 'created',
+				'order_type' => 'DESC',
 				'where' => array('status' => 2),
 				'limit' => -1
 		);
