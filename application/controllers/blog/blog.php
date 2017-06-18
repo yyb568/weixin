@@ -53,6 +53,7 @@ class Blog extends MY_Controller{
 		$params = array (
 				'table' => 'blog',
 				'select' => 'id,content,titles,created',
+				'where' => array('id' => $id),
 				'limit' => 1
 		);
 	 	$info = $this->common_model->get_list($params);
