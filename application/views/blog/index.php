@@ -15,11 +15,10 @@
 </head>
 
 <body class="gray-bg">
-    <div class="wrapper wrapper-content">
         <div class="row animated fadeInRight">
             <div class="col-sm-4">
                 <div class="ibox float-e-margins">
-                    <div class="ibox-title">
+                    <div class="ibox-title" style="border-color:#fff">
                         <h5>个人资料</h5>
                     </div>
                     <div>
@@ -184,7 +183,6 @@
 
             </div>
         </div>
-    </div>
     <script src="<?=static_url("js")?>jquery.min.js?v=2.1.4"></script>
     <script src="<?=static_url("js")?>bootstrap.min.js?v=3.3.6"></script>
     <script src="<?=static_url("js")?>content.min.js?v=1.0.0"></script>
