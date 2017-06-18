@@ -16,7 +16,7 @@
 
 <body class="gray-bg">
         <div class="row animated fadeInRight">
-            <div class="col-sm-4">
+            <div class="col-sm-4" style="padding-right:0px">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title" style="border-color:#fff">
                         <h5>个人资料</h5>
@@ -62,9 +62,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8" style="padding-right:0px">
                 <div class="ibox float-e-margins">
-                    <div class="ibox-title">
+                    <div class="ibox-title" style="border-color:#fff">
                         <h5>最新动态</h5>
                         <div class="ibox-tools">
                             <a class="collapse-link">
@@ -185,7 +185,6 @@
         </div>
     <script src="<?=static_url("js")?>jquery.min.js?v=2.1.4"></script>
     <script src="<?=static_url("js")?>bootstrap.min.js?v=3.3.6"></script>
-    <script src="<?=static_url("js")?>content.min.js?v=1.0.0"></script>
     <script src="<?=static_url("js")?>plugins/peity/jquery.peity.min.js"></script>
     <script src="<?=static_url("js")?>demo/peity-demo.min.js"></script>
 </body>
