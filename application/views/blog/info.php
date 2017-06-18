@@ -33,7 +33,7 @@
                             <button class="btn btn-white btn-xs" type="button">乐视超级自行车</button>
                         </div>
                         <div class="text-center article-title">
-                            <h2>
+                            <h2 style="font-weight:500">
                                     自行车都智能化了，你可知道它的历史？
                                 </h2>
                         </div>
