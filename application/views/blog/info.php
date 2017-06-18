@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
                 <div class="ibox">
-                    <div class="ibox-content">
+                    <div class="ibox-content"style="padding:25px">
                         <div class="pull-right">
                             <button class="btn btn-white btn-xs" type="button">700BIKE</button>
                             <button class="btn btn-white btn-xs" type="button">BeginOne</button>
