@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人资料</title>
+    <title>Blog. 尹义斌</title>
     <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
     <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
 
@@ -11,12 +11,15 @@
     <link href="<?=static_url("css")?>font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
     <link href="<?=static_url("css")?>animate.min.css" rel="stylesheet">
     <link href="<?=static_url("css")?>style.min862f.css?v=4.1.0" rel="stylesheet">
-
+<style>
+.btn-primary{
+	background-color:#337AB7;
+}
+</style>
 </head>
-
 <body class="gray-bg">
         <div class="row animated fadeInRight">
-            <div class="col-sm-4" style="padding-right:0px">
+            <div class="col-sm-4">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title" style="border-color:#fff">
                         <h5>个人资料</h5>
@@ -62,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-8" style="padding-right:0px">
+            <div class="col-sm-8">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title" style="border-color:#fff">
                         <h5>最新动态</h5>
@@ -174,7 +177,7 @@
 
                             </div>
 
-                            <button class="btn btn-primary btn-block m"><i class="fa fa-arrow-down"></i> 显示更多</button>
+                            <button class="btn btn-primary btn-block m" style="margin-left:5px"><i class="fa fa-arrow-down"></i> 显示更多</button>
 
                         </div>
 
