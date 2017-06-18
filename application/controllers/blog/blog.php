@@ -52,11 +52,11 @@ class Blog extends MY_Controller{
 	public function info($id = 0){
 		$params = array (
 				'table' => 'blog',
-				'select' => 'id,content,created',
+				'select' => 'id,content,titles,created',
 				'limit' => 1
 		);
 	 	$info = $this->common_model->get_list($params);
-	 	$this->tempalte['info'] = $info;
+	 	$this->template['info'] = $info;
 	 	$this->load->view("blog/info",$this->template);
 	}
 } 
