@@ -99,7 +99,7 @@
                         <div class="small m-b-xs">
                             <strong><?=$userlist[$val['user_id']]['uname'] ?></strong>&nbsp;&nbsp;<span class="text-muted"><i class="fa fa-clock-o"></i>&nbsp;<?=date("Y-m-d",$val['created']) ?></span>
                         </div>
-                        <p><?=$val['content']?></p>
+                        <p><?=msubstr(strip_tags($val['content']),0,100)?></p>
                         <div class="row">
                             <div class="col-md-6">
                                 <h5>标签：</h5>
@@ -109,8 +109,8 @@
                             <div class="col-md-6">
                                 <div class="small text-right">
                                     <h5>状态：</h5>
-                                    <div> <i class="fa fa-comments-o"> </i> 56 评论 </div>
-                                    <i class="fa fa-eye"> </i> 144 浏览
+                                    <div> <i class="fa fa-comments-o"> </i> 暂无评论 </div>
+                                    <i class="fa fa-eye"> </i> <?=$val['pviews']?> 浏览
                                 </div>
                             </div>
                         </div>
