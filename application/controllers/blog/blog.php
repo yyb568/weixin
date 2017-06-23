@@ -34,12 +34,16 @@ class Blog extends MY_Controller{
 		);
 		//我的文章
 		$list = $this->common_model->get_list($params);
+		//我的文章个数
+		$params['total'] = true;
+		$total = $this->common_model->get_list($params);
 		//查询文章分类
 		$ClassList = $this->common_model->get_Classification();
 		//查询发表文章的用户
 		$userlist = $this->common_model->get_UserList();
 		$this->template['ClassList'] = $ClassList;
 		$this->template['List'] = $list;
+		$this->template['total'] = $total;
 		$this->template['userlist'] = $userlist;
 		$this->load->view("blog/index",$this->template);
 	}

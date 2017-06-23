@@ -40,7 +40,7 @@
                             <div class="row m-t-lg">
                                 <div class="col-sm-4">
                                     <span class="bar">5,3,9,6,5,9,7,3,5,2</span>
-                                    <h5><strong>169</strong> 文章</h5>
+                                    <h5><strong><?=$total?></strong> 文章</h5>
                                 </div>
                                 <div class="col-sm-4">
                                     <span class="line">5,3,9,6,5,9,7,3,5,2</span>
