@@ -31,12 +31,13 @@
                         <div class="ibox-content profile-content">
                             <h4><strong>尹义斌</strong></h4>
                             <p><i class="fa fa-map-marker"></i> 山东省历下区水利厅1号楼三单元</p>
-                            <h5>
-                                    关于我
-                                </h5>
+                            <h5>关于我</h5>
                             <p>
                                 一个Phper,会点前端技术，div+css啊，jQuery之类的，不是很精；热爱生活，热爱互联网，热爱新技术；在不断的寻求新的突破。
                             </p>
+                             <h5>联系方式</h5>
+                             <p>WeChat: yinyibin</p>
+                             <p>Email: yinyibin5683@163.com</p>
                             <div class="row m-t-lg">
                                 <div class="col-sm-4">
                                     <span class="bar">5,3,9,6,5,9,7,3,5,2</span>
