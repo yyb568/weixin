@@ -145,7 +145,7 @@ class MY_Controller extends CI_Controller{
         {
             "type": "view", 
             "name": "我的博客", 
-            "url": "http://http://118.89.216.220/blog/blog"
+            "url": "http://118.89.216.220/blog/blog"
         }
     ]
 }';
